@@ -61,9 +61,3 @@ IDS-Multimodal-DDPM/
     └── reproduction_guide.md
 ```
 
-# 4. 运行基准实验
-python scripts/run_experiment.py --experiment baseline --dataset cicids2017 --seed 42
-
-# 5. 生成最终结果
-python scripts/evaluation/generate_results.py --dataset cicids2017 --output results/
-```
