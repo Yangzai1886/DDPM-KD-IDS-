@@ -1,0 +1,66 @@
+multimodal:
+  data_preprocessing:
+    img_size: 32
+    n_clusters: 3
+    feature_selection:
+      method: "mutual_information"
+      n_features: 75
+      n_groups: 3
+    
+  ddpm:
+    image_ddpm:
+      epochs: 100
+      target_count: 2000
+      batch_size: 32
+      learning_rate: 2e-4
+      timesteps: 1000
+    
+    table_ddpm:
+      samples_per_class: 1200
+      timesteps: 300
+      learning_rate: 1e-3
+      epochs: 30
+  
+  training:
+    batch_size: 64
+    teacher_epochs: 20
+    student_epochs: 20
+    k_folds: 5
+    learning_rate: 0.001
+    weight_decay: 1e-5
+    
+  knowledge_distillation:
+    temperature: 3.0
+    alpha: 0.5
+    loss_weights:
+      ce: 0.5
+      kd: 0.5
+
+baseline:
+  models:
+    - "mobilenetv3"
+    - "shufflenet" 
+    - "alexnet"
+    - "efficientnet-lite"
+    - "resnet50"
+  
+  training:
+    img_size: 224
+    batch_size: 64
+    epochs: 20
+    learning_rate: 0.001
+    k_folds: 5
+  
+  evaluation:
+    metrics:
+      - "accuracy"
+      - "precision"
+      - "recall" 
+      - "f1_score"
+      - "inference_time"
+      - "model_size"
+
+seeds:
+  data_splitting: 42
+  model_initialization: 42
+  training: 42

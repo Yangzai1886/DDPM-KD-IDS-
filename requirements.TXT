@@ -1,0 +1,17 @@
+torch==2.6.0+cu124
+torchvision==0.21.0+cu124
+torchaudio==2.6.0+cu124
+diffusers==0.32.2
+pandas==2.2.3
+numpy==1.26.3
+scikit-learn==1.6.1
+opencv-python==4.11.0.86
+Pillow==11.0.0
+scipy==1.13.1
+joblib==1.4.2
+matplotlib==3.9.4
+seaborn==0.13.2
+tqdm==4.67.1
+efficientnet-pytorch==0.7.1
+tensorboard==2.19.0
+pyyaml==6.0.2

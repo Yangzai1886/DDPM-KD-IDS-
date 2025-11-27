@@ -1,0 +1,42 @@
+datasets:
+  cicids2017:
+    csv_path: "\cicids2017\2017.csv"
+    preprocessing:
+      img_output_dir: "\cicids2017\genRGB"
+      ddpm_data_dir: "\cicids2017\BF_XSS_SQL_Infil_Hb"
+      final_data_dir: "\cicids2017\noddpm"
+      multimodal_output: "\cicids2017\multimodal_results"
+      model_save_dir: "\cicids2017\models"
+    minority_classes:
+      - "Brute Force"
+      - "XSS"
+      - "SQL Injection"
+      - "Infiltration"
+      - "Heartbleed"
+
+  cicids2018:
+    csv_path: "\cicids2018\2018.csv"
+    preprocessing:
+      img_output_dir: "\cicids2018\genRGB"
+      ddpm_data_dir: "\cicids2018\web_xss_sql"
+      final_data_dir: "\cicids2018\noddpm"
+      multimodal_output: "\cicids2018\multimodal_results"
+      model_save_dir: "G\cicids2018\models"
+    minority_classes:
+      - "Brute Force -Web"
+      - "Brute Force -XSS"
+      - "SQL Injection"
+
+  toniot:
+    csv_path: "\TonIoT/TON_IoT.csv"
+    preprocessing:
+      img_output_dir: "\TonIoT\genRGB"
+      ddpm_data_dir: "\TonIoT\mitm_scan_dos_inj"
+      final_data_dir: "G\TonIoT\noddpm"
+      multimodal_output: "\TonIoT\multimodal_results"
+      model_save_dir: "\TonIoT\models"
+    minority_classes:
+      - "mitm"
+      - "scanning"
+      - "dos"
+      - "injection"

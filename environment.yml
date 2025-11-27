@@ -1,0 +1,31 @@
+name: ids-multimodal-ddpm
+channels:
+  - pytorch
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip=25.0.1
+  - cudatoolkit=11.8 
+  - numpy=1.26.3
+  - pandas=2.2.3
+  - scikit-learn=1.6.1
+  - matplotlib=3.9.4
+  - seaborn=0.13.2
+  - jupyter=1.0.0
+  - notebook=7.3.3
+  - opencv=4.11.0
+  - pillow=11.0.0
+  - tqdm=4.67.1
+  - scipy=1.13.1
+  - joblib=1.4.2
+  - pip:
+    - torch==2.6.0+cu124
+    - torchvision==0.21.0+cu124
+    - torchaudio==2.6.0+cu124
+    - diffusers==0.32.2
+    - transformers==4.36.2
+    - efficientnet-pytorch==0.7.1
+    - tensorboard==2.19.0
+    - pyyaml==6.0.2
+    - wandb==0.16.6
