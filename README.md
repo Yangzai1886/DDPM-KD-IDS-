@@ -1,6 +1,6 @@
 ## DIFFUSION MULTIMODAL DISTILLATION COLLABORATION: A Generative  Equilibrium Framework for Efficient Vehicle Networking Intrusion  Detection
 
-## 扩散多模态蒸馏协作：面向高效车联网入侵检测的生成式均衡框架
+## 扩散多模态蒸馏协同：面向高效车联网入侵检测的生成式均衡框架
 
 ## 🏗️ GitHub仓库结构
 
