@@ -164,9 +164,6 @@ markdown
 ### 优化器参数
 - `optimizer`: AdamW
 - `weight_decay`: 1e-5
-- `lr_scheduler`: 无
-
-## 基准模型超参数
 
 ### 通用参数
 - `img_size`: 224 - 输入图像尺寸
@@ -188,9 +185,7 @@ python
 
 ```
 #!/usr/bin/env python3
-"""
-主实验运行脚本 - 遵循IEEE可重现性指南
-"""
+
 
 import argparse
 import yaml
@@ -352,4 +347,5 @@ python scripts/run_experiment.py --experiment baseline --dataset cicids2017 --se
 
 # 5. 生成最终结果
 python scripts/evaluation/generate_results.py --dataset cicids2017 --output results/
+
 ```
