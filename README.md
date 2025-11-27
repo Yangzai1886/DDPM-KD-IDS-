@@ -47,14 +47,6 @@ IDS-Multimodal-DDPM/
 │       ├── base_experiment.py
 │       ├── multimodal_experiment.py
 │       └── baseline_experiment.py
-├── notebooks/                         # Jupyter notebooks
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_feature_analysis.ipynb
-│   └── 03_result_analysis.ipynb
-├── tests/                             # 单元测试
-│   ├── test_data.py
-│   ├── test_models.py
-│   └── test_utils.py
 └── docs/                              # 文档
     ├── dataset_preprocessing.md
     ├── hyperparameter_documentation.md
